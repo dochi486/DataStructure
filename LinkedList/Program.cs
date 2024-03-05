@@ -5,76 +5,94 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace LinkedList
 {
-    class Node<T>
+    class MyLinkedListNode<T>
     {
         public T Data;
-        public Node<T> Next;
-        public Node<T> Prev;
+        public MyLinkedListNode<T> Next;
+        public MyLinkedListNode<T> Prev;
     }
 
-    class NodeList<T>
+    class MyLinkedList<T>
     {
-        public Node<T> Head = null;
-        public Node<T> Tail = null;
+        public MyLinkedListNode<T> Head = null;
+        public MyLinkedListNode<T> Tail = null;
         public int Count = 0;
 
-        public Node<T> AddLast(T data)
+        public MyLinkedListNode<T> AddLast(T data)
         {
-            Node<T> newNode = new Node<T>();
-            newNode.Data = data;
+            MyLinkedListNode<T> newMyLinkedListNode = new MyLinkedListNode<T>();
+            newMyLinkedListNode.Data = data;
 
             // 만약 아무 노드도 없었다면 새로 추가한 노드가 head이다.
             if (Head == null)
             {
-                Head = newNode;
+                Head = newMyLinkedListNode;
             }
 
             // 기존의 마지막 노드와 새로 추가되는 노드를 연결해준다. 
             if (Tail != null)
             {
-                Tail.Next = newNode;
-                newNode.Prev = Tail;
+                Tail.Next = newMyLinkedListNode;
+                newMyLinkedListNode.Prev = Tail;
             }
 
             // 새로 추가되는 노드를 마지막 노드로 만들어준다. 
-            Tail = newNode;
+            Tail = newMyLinkedListNode;
             Count++;
-            return newNode;
+            return newMyLinkedListNode;
         }
 
-        public void Remove(Node<T> node)
+        public void Remove(MyLinkedListNode<T> MyLinkedListNode)
         {
             // 기존의 Next 노드를 Head로 만들어준다. 
-            if (Head == node)
+            if (Head == MyLinkedListNode)
             {
                 Head = Head.Next;
             }
 
-            if (Tail == node)
+            if (Tail == MyLinkedListNode)
             {
                 Tail = Tail.Prev;
             }
 
-            if (node.Prev != null)
+            if (MyLinkedListNode.Prev != null)
             {
-                node.Prev.Next = node.Next;
+                MyLinkedListNode.Prev.Next = MyLinkedListNode.Next;
             }
 
-            if (node.Next != null)
+            if (MyLinkedListNode.Next != null)
             {
-                node.Next.Prev = node.Prev;
+                MyLinkedListNode.Next.Prev = MyLinkedListNode.Prev;
             }
 
             Count--;
         }
     }
+    class Board
+    {
+        public int[] _data = new int[25];
+        public List<int> _data2 = new List<int>();
+        public MyLinkedList<int> _data3 = new MyLinkedList<int>();
+
+        public void Initialize()
+        {
+            _data3.AddLast(101);
+            _data3.AddLast(102);
+            MyLinkedListNode<int> node = _data3.AddLast(103);
+            _data3.AddLast(104);
+            _data3.AddLast(105);
+
+            _data3.Remove(node);
+
+        }
+    }
 
     class Program
     {
-        public LinkedList<int> _data3 = new LinkedList<int>();
         static void Main(string[] args)
         {
-               
+            Board board = new Board();
+            board.Initialize();
         }
     }
 }

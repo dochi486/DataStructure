@@ -62,11 +62,18 @@ namespace List
     class Board
     {
         public int[] _data = new int[25];
-        public List<int> _data2 = new List<int>();
+        public MyList<int> _data2 = new MyList<int>();
         public LinkedList<int> _data3 = new LinkedList<int>();
 
         public void Initialize()
         {
+            _data2.Add(101);
+            _data2.Add(102);
+            _data2.Add(103);
+            _data2.Add(104);
+            _data2.Add(105);
+
+            _data2.RemoveAt(2);
 
         }
     }
