@@ -6,8 +6,8 @@ namespace List
 {
     class MyList<T>
     {
-        const int DEFAULT_SIZE = 1;
-        T[] _data = new T[DEFAULT_SIZE];
+        const int DEFAULTSize = 1;
+        T[] _data = new T[DEFAULTSize];
 
 
         public int Count = 0; // 실제로 사용중인 데이터 갯수 
