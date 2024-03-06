@@ -28,7 +28,71 @@ namespace Algorithm
             _tile = new TileType[size, size];
             _size = size;
 
-            GenerateByBinaryTree();
+            //GenerateByBinaryTree();
+            GenerateBySideWinder();
+        }
+
+        private void GenerateBySideWinder()
+        {
+            // 길을 일단 다 막는 작업
+            for (int y = 0; y < _size; y++)
+            {
+                for (int x = 0; x < _size; x++)
+                {
+                    // 외곽일 때 Wall로 만들어줌
+                    if (x % 2 == 0 || y % 2 == 0)
+                        _tile[y, x] = TileType.Wall;
+                    else
+                        _tile[y, x] = TileType.Empty;
+                }
+            }
+
+            Random random = new Random();
+
+            // 랜덤으로 우측, 좌측을 뚫는 처리
+            for (int y = 0; y < _size; y++)
+            {
+                // 연속되는 좌표의 갯수이므로 1부터 시작
+                int count = 1;
+
+                for (int x = 0; x < _size; x++)
+                {
+                    // 외곽일 때 Wall로 만들어줌
+                    if (x % 2 == 0 || y % 2 == 0)
+                        continue;
+
+                    // 출구가 아예 없도록 처리
+                    if (y == _size - 2 && x == _size - 2)
+                        continue;
+
+                    // 맨 끝까지 갔다면 벽에 구멍 뚫지 않도록 처리
+                    if (y == _size - 2)
+                    {
+                        _tile[y, x + 1] = TileType.Empty;
+                        continue;
+                    }
+
+                    if (x == _size - 2)
+                    {
+                        _tile[y + 1, x] = TileType.Empty;
+                        continue;
+                    }
+
+                    if (random.Next(0, 2) == 0)
+                    {
+                        // 우측 방향을 뚫어준다.
+                        _tile[y, x + 1] = TileType.Empty;
+                        count++;
+                    }
+                    else
+                    {
+                        int randomIndex = random.Next(0, count);
+                        _tile[y + 1, x - randomIndex * 2] = TileType.Empty;
+                        // 카운트만큼 길을 뚫어줬으니 카운트 초기화
+                        count = 1;
+                    }
+                }
+            }
         }
 
         private void GenerateByBinaryTree()
