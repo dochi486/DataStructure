@@ -46,7 +46,7 @@ namespace Algorithm
             int[] frontY = new int[] { -1, 0, 1, 0 };
             int[] frontX = new int[] { 0, -1, 0, 1 };
             int[] rightY = new int[] { 0, -1, 0, 1 };
-            int[] rightX = new int[] { -1, 0, 1, 0 };
+            int[] rightX = new int[] { 1, 0, -1, 0 };
 
 
             _points.Add(new Pos(PosY, PosX));
