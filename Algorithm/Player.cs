@@ -263,7 +263,12 @@ namespace Algorithm
         public void Update(int deltaTick)
         {
             if(_lastIndex >= _points.Count)
-                return;
+            {
+                _lastIndex = 0;
+                _points.Clear();
+                _board.Initialize(_board.Size, this);
+                Initialize(1, 1, _board);
+            }
 
             _sumTick += deltaTick;
             if (_sumTick > MOVE_TICK)
