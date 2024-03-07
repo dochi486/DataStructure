@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "LinkedList\Li
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm", "Algorithm\Algorithm.csproj", "{DFE842C7-B743-4B58-8334-856E7EDDEF2F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph", "Graph\Graph.csproj", "{CC0EF800-5DBC-44C7-AADD-E771942A29EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{DFE842C7-B743-4B58-8334-856E7EDDEF2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFE842C7-B743-4B58-8334-856E7EDDEF2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFE842C7-B743-4B58-8334-856E7EDDEF2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC0EF800-5DBC-44C7-AADD-E771942A29EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC0EF800-5DBC-44C7-AADD-E771942A29EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC0EF800-5DBC-44C7-AADD-E771942A29EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC0EF800-5DBC-44C7-AADD-E771942A29EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

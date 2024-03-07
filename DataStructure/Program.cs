@@ -17,7 +17,8 @@ namespace PriorityQueue
             {
                 // 하나 위의 인덱스 구하는 공식 그냥 외우기
                 int next = (now - 1) / 2;
-
+                
+                // 작으면 -1
                 if (_heap[now].CompareTo(_heap[next]) < 0)
                     break;
 
@@ -89,6 +90,7 @@ namespace PriorityQueue
             if (Id != other.Id)
                 return 0;
 
+            // other보다 크면 1, 작으면 -1
             return Id > other.Id ? 1 : -1;
         }
     }
