@@ -70,7 +70,7 @@
                     if (adj[now, next] == -1)
                         continue;
                     // 이미 방문했던 점도 스킵
-                    if (!visited[next])
+                    if (visited[next])
                         continue;
 
                     // 새로 조사된 점의 최단 거리를 계산한다. 
