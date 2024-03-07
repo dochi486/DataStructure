@@ -1,7 +1,12 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace PriorityQueue
+namespace Algorithm
 {
+
     class PriorityQueue<T> where T : IComparable<T>
     {
         List<T> _heap = new List<T>();
@@ -17,7 +22,7 @@ namespace PriorityQueue
             {
                 // 하나 위의 인덱스 구하는 공식 그냥 외우기
                 int next = (now - 1) / 2;
-                
+
                 // 작으면 -1
                 if (_heap[now].CompareTo(_heap[next]) < 0)
                     break;
@@ -80,7 +85,7 @@ namespace PriorityQueue
         {
             get { return _heap.Count; }
         }
-        
+
     }
 
     class Knight : IComparable<Knight>
@@ -96,24 +101,6 @@ namespace PriorityQueue
         }
     }
 
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            PriorityQueue<Knight> q = new PriorityQueue<Knight>();
-            q.Push(new Knight(){Id = 20});
-            q.Push(new Knight() { Id = 30 });
-            q.Push(new Knight() { Id = 50 }); 
-            q.Push(new Knight() { Id = 10 });
-            q.Push(new Knight() { Id = 90 });
-            q.Push(new Knight() { Id = 80 });
 
-            while (q.Count > 0)
-            {
-                Console.WriteLine(q.Pop());
-            }
 
-        }
-    }
 }
-
