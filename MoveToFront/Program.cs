@@ -5,11 +5,9 @@
         // 전진 이동법
         static void MoveToFront(int[] array, int target)
         {
-            // 기존의 0번 인덱스에 있던 데이터를 담을 변수
-            int temp = 0;
             int[] tempArr = new int[array.Length];
 
-            int i = 0;
+            int i;
             // 배열 전체를 탐색하면서
             for (i = 0; i < array.Length; i++)
             {
@@ -20,7 +18,7 @@
                 }
             }
 
-            int j = 0;
+            int j;
 
             if (i > 0)
             {

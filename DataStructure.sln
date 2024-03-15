@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph", "Graph\Graph.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoveToFront", "MoveToFront\MoveToFront.csproj", "{FB7DE94B-9DAE-493A-B64E-594136D9E5B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transpose", "Transpose\Transpose.csproj", "{E359A1D2-9E58-4300-B789-D540196B60E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{FB7DE94B-9DAE-493A-B64E-594136D9E5B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB7DE94B-9DAE-493A-B64E-594136D9E5B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB7DE94B-9DAE-493A-B64E-594136D9E5B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E359A1D2-9E58-4300-B789-D540196B60E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E359A1D2-9E58-4300-B789-D540196B60E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E359A1D2-9E58-4300-B789-D540196B60E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E359A1D2-9E58-4300-B789-D540196B60E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
