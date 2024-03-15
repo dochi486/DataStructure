@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
 
 
 namespace LinkedList
@@ -39,6 +38,7 @@ namespace LinkedList
             // 새로 추가되는 노드를 마지막 노드로 만들어준다. 
             Tail = newMyLinkedListNode;
             Count++;
+
             return newMyLinkedListNode;
         }
 
@@ -70,19 +70,17 @@ namespace LinkedList
     }
     class Board
     {
-        public int[] _data = new int[25];
-        public List<int> _data2 = new List<int>();
-        public MyLinkedList<int> _data3 = new MyLinkedList<int>();
+        public MyLinkedList<int> _data = new MyLinkedList<int>();
 
         public void Initialize()
         {
-            _data3.AddLast(101);
-            _data3.AddLast(102);
-            MyLinkedListNode<int> node = _data3.AddLast(103);
-            _data3.AddLast(104);
-            _data3.AddLast(105);
+            _data.AddLast(101);
+            _data.AddLast(102);
+            MyLinkedListNode<int> node = _data.AddLast(103);
+            _data.AddLast(104);
+            _data.AddLast(105);
 
-            _data3.Remove(node);
+            _data.Remove(node);
 
         }
     }

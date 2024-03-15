@@ -68,6 +68,7 @@ namespace Algorithm
             int[] deltaY = new int[] { -1, 0, 1, 0, -1, 1, 1, -1 };
             int[] deltaX = new int[] { 0, -1, 0, 1, -1, -1, 1, 1 };
             int[] cost = new int[] { 10, 10, 10, 10, 14, 14, 14, 14 };
+            // 대각선 코스트는 
 
             // 점수 매기기
             // F = G + H
@@ -238,7 +239,7 @@ namespace Algorithm
                     // 앞으로 한 보 전진
                     PosY = PosY + frontY[_dir];
                     PosX = PosX + frontX[_dir];
-                    _points.Add(new Pos(PosY, PosX));
+                    _points.Add(new Pos(PosY, PosX)); 
                 }
                 // 2. 현재 바라보는 방향을 기준으로 전진할 수 있는지 확인
                 else if (_board.Tile[PosY + frontY[_dir], PosX + frontX[_dir]] == Board.TileType.Empty)
@@ -277,7 +278,7 @@ namespace Algorithm
 
                 PosY = _points[_lastIndex].Y;
                 PosX = _points[_lastIndex].X;
-                _lastIndex++;
+                _lastIndex++;   
 
                 //// 0.1 초마다 실행될 로직
                 //int randValue = _random.Next(0, 5);

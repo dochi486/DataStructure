@@ -6,8 +6,8 @@ namespace List
 {
     class MyList<T>
     {
-        const int DEFAULTSize = 1;
-        T[] _data = new T[DEFAULTSize];
+        const int DEFAULT_SIZE = 1;
+        T[] _data = new T[DEFAULT_SIZE];
 
 
         public int Count = 0; // 실제로 사용중인 데이터 갯수 
@@ -61,19 +61,17 @@ namespace List
 
     class Board
     {
-        public int[] _data = new int[25];
-        public MyList<int> _data2 = new MyList<int>();
-        public LinkedList<int> _data3 = new LinkedList<int>();
+        public MyList<int> _data = new MyList<int>();
 
         public void Initialize()
         {
-            _data2.Add(101);
-            _data2.Add(102);
-            _data2.Add(103);
-            _data2.Add(104);
-            _data2.Add(105);
+            _data.Add(101);
+            _data.Add(102);
+            _data.Add(103);
+            _data.Add(104);
+            _data.Add(105);
 
-            _data2.RemoveAt(2);
+            _data.RemoveAt(2);
 
         }
     }

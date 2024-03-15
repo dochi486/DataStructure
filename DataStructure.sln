@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm", "Algorithm\Algo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph", "Graph\Graph.csproj", "{CC0EF800-5DBC-44C7-AADD-E771942A29EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoveToFront", "MoveToFront\MoveToFront.csproj", "{FB7DE94B-9DAE-493A-B64E-594136D9E5B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{CC0EF800-5DBC-44C7-AADD-E771942A29EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC0EF800-5DBC-44C7-AADD-E771942A29EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC0EF800-5DBC-44C7-AADD-E771942A29EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB7DE94B-9DAE-493A-B64E-594136D9E5B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB7DE94B-9DAE-493A-B64E-594136D9E5B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB7DE94B-9DAE-493A-B64E-594136D9E5B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB7DE94B-9DAE-493A-B64E-594136D9E5B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
