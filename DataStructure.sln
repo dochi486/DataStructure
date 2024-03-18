@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityQueue", "DataStructure\PriorityQueue.csproj", "{255A7382-0340-464C-B31F-EA5302C4C41D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PriorityQueue", "DataStructure\PriorityQueue.csproj", "{255A7382-0340-464C-B31F-EA5302C4C41D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "List", "List\List.csproj", "{813EBEAD-42BD-4D8B-8F28-8F0E2C1B8F7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "List", "List\List.csproj", "{813EBEAD-42BD-4D8B-8F28-8F0E2C1B8F7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "LinkedList\LinkedList.csproj", "{1DF80EB5-CBB3-4018-8319-49A8B3CEC1EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedList", "LinkedList\LinkedList.csproj", "{1DF80EB5-CBB3-4018-8319-49A8B3CEC1EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm", "Algorithm\Algorithm.csproj", "{DFE842C7-B743-4B58-8334-856E7EDDEF2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithm", "Algorithm\Algorithm.csproj", "{DFE842C7-B743-4B58-8334-856E7EDDEF2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph", "Graph\Graph.csproj", "{CC0EF800-5DBC-44C7-AADD-E771942A29EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Graph", "Graph\Graph.csproj", "{CC0EF800-5DBC-44C7-AADD-E771942A29EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoveToFront", "MoveToFront\MoveToFront.csproj", "{FB7DE94B-9DAE-493A-B64E-594136D9E5B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoveToFront", "MoveToFront\MoveToFront.csproj", "{FB7DE94B-9DAE-493A-B64E-594136D9E5B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transpose", "Transpose\Transpose.csproj", "{E359A1D2-9E58-4300-B789-D540196B60E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transpose", "Transpose\Transpose.csproj", "{E359A1D2-9E58-4300-B789-D540196B60E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTree", "BinarySearchTree\BinarySearchTree.csproj", "{F6AB27DD-1D65-41CB-A105-223F3DC82E44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{E359A1D2-9E58-4300-B789-D540196B60E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E359A1D2-9E58-4300-B789-D540196B60E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E359A1D2-9E58-4300-B789-D540196B60E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6AB27DD-1D65-41CB-A105-223F3DC82E44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6AB27DD-1D65-41CB-A105-223F3DC82E44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6AB27DD-1D65-41CB-A105-223F3DC82E44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6AB27DD-1D65-41CB-A105-223F3DC82E44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
