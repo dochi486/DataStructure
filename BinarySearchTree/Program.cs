@@ -140,10 +140,8 @@
                 else
                     return current;
             }
-
             return null;
         }
-
     }
     
 
